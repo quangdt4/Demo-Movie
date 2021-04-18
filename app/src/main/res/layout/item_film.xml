@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/d_16"
+    app:cardCornerRadius="@dimen/d_8">
+
+    <LinearLayout
+        android:id="@+id/ln_item_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/iv_poster"
+                android:layout_width="@dimen/d_106"
+                android:layout_height="@dimen/d_160"
+                android:contentDescription="@string/forbackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_poster_mau" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/d_16">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/legacies"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/d_20s"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_8"
+                    android:text="@string/time"
+                    android:textSize="@dimen/d_16s" />
+
+                <TextView
+                    android:id="@+id/tv_overview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/d_16"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/legacies"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </TableRow>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

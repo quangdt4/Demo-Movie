@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bitmap_poster"
+        android:contentDescription="@string/forbackground"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000" />
+
+    <ImageView
+        android:layout_width="@dimen/d_80"
+        android:layout_height="@dimen/d_80"
+        android:layout_gravity="center"
+        android:contentDescription="@string/forlogo"
+        android:src="@drawable/ic_login" />
+</FrameLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Movie!</string>
+    <string name="API_KEY_YOUTUBE">AIzaSyAQAIcmVkW0WoSV6_MbqJmsI_I4uTmd-3o</string>
+    <string name="legacies">Legacies</string>
+    <string name="time">Oct 25, 2018</string>
+    <string name="godzilla_vs_kong">Godzilla vs Kong</string>
+    <string name="_8_6">8.6</string>
+    <string name="user_score">User Score</string>
+    <string name="play_trailer">Play Trailer</string>
+    <string name="overview_title">Overview</string>
+    <string name="korean">Korean</string>
+    <string name="release">Release:</string>
+    <string name="language">Language:</string>
+    <string name="overview">When the crew of a sestruction, they get involved in a risky business deal which puts their lives at stake.</string>
+    <string name="original_title">Original Title:</string>
+    <string name="vote_count">Vote Count:</string>
+    <string name="remember_me">Remember me</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="trailer">Trailer</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="comment">Comment</string>
+    <string name="forbutton">forButton</string>
+    <string name="forlogo">forLogo</string>
+    <string name="forbackground">forBackground</string>
+    <string name="login">Login</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bitmap_poster"
+        android:contentDescription="@string/forbackground"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BF000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/d_16">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/d_120"
+            android:contentDescription="@string/forlogo"
+            android:src="@drawable/ic_login" />
+
+        <EditText
+            android:id="@+id/edt_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_56"
+            android:background="@drawable/bg_radius"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:padding="@dimen/d_20"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grayDark"
+            android:textSize="@dimen/d_16s" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20"
+            android:background="@drawable/bg_radius"
+            android:fontFamily="sans-serif-light"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/d_20"
+            android:textColor="@color/white"
+            android:textColorHint="@color/grayDark"
+            android:textSize="@dimen/d_16s" />
+
+
+        <CheckBox
+            android:id="@+id/cb_remember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/white"
+            android:text="@string/remember_me"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_16s" />
+
+        <TextView
+            android:id="@+id/tv_login"
+            android:layout_width="@dimen/d_200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/d_20"
+            android:background="@drawable/bg_radius_fill"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="@dimen/d_15"
+            android:text="@string/login"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            android:textSize="@dimen/d_18s"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</FrameLayout>

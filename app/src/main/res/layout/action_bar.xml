@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_56"
+        android:background="@color/dark_blue"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/ic_logout"
+            android:layout_width="@dimen/d_56"
+            android:layout_height="@dimen/d_56"
+            android:padding="@dimen/d_16"
+            android:src="@drawable/ic_logout"
+            app:tint="@color/white"
+            android:contentDescription="@string/forbutton" />
+
+        <ImageView
+            android:layout_width="@dimen/d_0"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="@dimen/d_8"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="@string/forlogo" />
+
+        <View
+            android:layout_width="@dimen/d_56"
+            android:layout_height="@dimen/d_56" />
+    </TableRow>
+
+</LinearLayout>
