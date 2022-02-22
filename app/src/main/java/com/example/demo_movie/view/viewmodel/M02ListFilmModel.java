@@ -5,9 +5,6 @@ import android.util.Log;
 import com.example.demo_movie.API;
 import com.example.demo_movie.model.FilmResModel;
 
-import lombok.Getter;
-
-@Getter
 public class M02ListFilmModel extends BaseViewModel {
     private static final String TAG = M02ListFilmModel.class.getName();
     private static final String API_KEY_GET_REQ_TOKEN = "API_KEY_GET_REQ_TOKEN";

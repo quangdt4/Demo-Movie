@@ -3,6 +3,7 @@ package com.example.demo_movie.view.act;
 import com.example.demo_movie.OnActionCallBack;
 import com.example.demo_movie.R;
 import com.example.demo_movie.model.FilmResModel;
+import com.example.demo_movie.view.fragment.M004Frg;
 import com.example.demo_movie.view.fragment.M00SplashFrg;
 import com.example.demo_movie.view.fragment.M01LoginFrg;
 import com.example.demo_movie.view.fragment.M02ListFilmFrg;
@@ -50,6 +51,13 @@ public class MainActivity extends BaseAct<M02ListFilmModel> implements OnActionC
                 detailFilm.setFilm(film);
                 detailFilm.setCallBack(this);
                 showFragment(R.id.container_view, detailFilm, false);
+                break;
+            case M03DetailFilmFrg.KEY_SHOW_TRAILER:
+                M004Frg m004Frg = new M004Frg();
+                FilmResModel.Result film1 = (FilmResModel.Result) data;
+                m004Frg.setFilm(film1);
+                m004Frg.setCallBack(this);
+                showFragment(R.id.container_view, m004Frg, true);
                 break;
         }
     }

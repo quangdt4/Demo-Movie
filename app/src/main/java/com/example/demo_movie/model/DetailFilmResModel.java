@@ -5,11 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class DetailFilmResModel implements Serializable {
     @SerializedName("id")
     private int id;
@@ -17,10 +12,28 @@ public class DetailFilmResModel implements Serializable {
     @SerializedName("results")
     private List<Result> listResult;
 
-    @Getter
-    @Setter
+    public List<Result> getListResult() {
+        return listResult;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setListResult(List<Result> listResult) {
+        this.listResult = listResult;
+    }
+
     public static class Result implements Serializable {
         @SerializedName("key")
         private String key;
+
+        public String getKey() {
+            return key;
+        }
     }
 }

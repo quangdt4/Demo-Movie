@@ -5,11 +5,6 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 import java.util.List;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Getter
-@Setter
 public class FilmResModel implements Serializable {
     @SerializedName("page")
     private int page;
@@ -17,8 +12,22 @@ public class FilmResModel implements Serializable {
     @SerializedName("results")
     private List<Result> listResult;
 
-    @Getter
-    @Setter
+    public int getPage() {
+        return page;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
+    }
+
+    public void setListResult(List<Result> listResult) {
+        this.listResult = listResult;
+    }
+
+    public List<Result> getListResult() {
+        return listResult;
+    }
+
     public static class Result implements Serializable {
         private boolean isSelected;
 
@@ -55,6 +64,50 @@ public class FilmResModel implements Serializable {
 
         @SerializedName("vote_count")
         private String voteCount;
+
+        public String getDropback() {
+            return dropback;
+        }
+
+        public String getId() {
+            return id;
+        }
+
+        public String getLanguage() {
+            return language;
+        }
+
+        public String getPosterPath() {
+            return posterPath;
+        }
+
+        public String getOriginaleTitle() {
+            return originaleTitle;
+        }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public String getOverview() {
+            return overview;
+        }
+
+        public String getTime() {
+            return time;
+        }
+
+        public String getVote() {
+            return vote;
+        }
+
+        public String getVoteCount() {
+            return voteCount;
+        }
+
+        public void setSelected(boolean selected) {
+            isSelected = selected;
+        }
     }
 }
 

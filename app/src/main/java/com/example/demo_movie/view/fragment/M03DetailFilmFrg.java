@@ -18,6 +18,7 @@ import com.example.demo_movie.view.viewmodel.M03DetailViewModel;
 
 public class M03DetailFilmFrg extends BaseFragment<M03DetailViewModel> {
     public static final String KEY_BACK_LIST = "KEY_BACK_LIST";
+    public static final String KEY_SHOW_TRAILER = "KEY_SHOW_TRAILER";
     private static final String TAG = M03DetailViewModel.class.getName();
     private FilmResModel.Result film;
     private DetailFilmResModel.Result detailRs;
@@ -132,10 +133,10 @@ public class M03DetailFilmFrg extends BaseFragment<M03DetailViewModel> {
     }
 
     private void showTrailer() {
-        App.getInstance().getStorage().setId(detailRs.getKey());
-        Intent intent = new Intent();
-        intent.setClass(App.getInstance(), YoutubeDialog.class);
-        startActivity(intent);
-
+//        App.getInstance().getStorage().setId(detailRs.getKey());
+//        Intent intent = new Intent();
+//        intent.setClass(App.getInstance(), YoutubeDialog.class);
+//        startActivity(intent);
+        callBack.onCallBack(KEY_SHOW_TRAILER, film);
     }
 }

@@ -6,6 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <include layout="@layout/action_detail_bar" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -352,5 +354,5 @@
 
     </ScrollView>
 
-    <include layout="@layout/action_detail_bar" />
+
 </LinearLayout>
