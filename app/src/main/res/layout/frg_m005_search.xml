@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/action_search_bar" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/d_16"
+        android:layout_marginTop="@dimen/d_10"
+        android:layout_marginEnd="@dimen/d_16"
+        android:layout_marginBottom="@dimen/d_10"
+        android:background="@drawable/bg_search_bar">
+
+        <EditText
+            android:id="@+id/edtSearchMovie"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/movie_name"
+            android:imeOptions="actionDone"
+            android:lines="1"
+            android:maxLength="50"
+            android:maxLines="1"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/d_10"
+            android:paddingTop="@dimen/d_10"
+            android:paddingBottom="@dimen/d_10"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/d_16s" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="@dimen/d_16"
+            android:layout_height="@dimen/d_16"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_marginEnd="@dimen/d_8"
+            android:src="@drawable/ic_search"
+            app:tint="@color/black" />
+    </TableRow>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/d_16">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvSearchMovie"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvNoResults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="0.5"
+            android:text="@string/no_results"
+            android:textColor="@color/black"
+            android:textSize="@dimen/d_16s"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

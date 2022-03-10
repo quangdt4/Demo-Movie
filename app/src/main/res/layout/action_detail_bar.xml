@@ -14,9 +14,8 @@
 
         <ImageView
             android:id="@+id/iv_back"
-            android:layout_width="0dp"
+            android:layout_width="56dp"
             android:layout_height="@dimen/d_56"
-            android:layout_weight="1"
             android:contentDescription="@string/forbutton"
             android:padding="@dimen/d_16"
             android:src="@drawable/ic_back"
@@ -30,7 +29,8 @@
             android:contentDescription="@string/forbutton"
             android:padding="@dimen/d_20"
             android:src="@drawable/ic_share"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:visibility="gone"/>
 
         <ImageView
             android:id="@+id/iv_rate"
@@ -40,7 +40,8 @@
             android:contentDescription="@string/forbutton"
             android:padding="@dimen/d_16"
             android:src="@drawable/ic_star_rate"
-            app:tint="@color/white" />
+            app:tint="@color/white"
+            android:visibility="gone"/>
 
         <View
             android:layout_width="0.5dp"

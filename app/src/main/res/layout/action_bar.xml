@@ -30,9 +30,14 @@
             android:src="@drawable/ic_logo"
             android:contentDescription="@string/forlogo" />
 
-        <View
+        <ImageView
+            android:id="@+id/ic_search"
             android:layout_width="@dimen/d_56"
-            android:layout_height="@dimen/d_56" />
+            android:layout_height="@dimen/d_56"
+            android:padding="@dimen/d_15"
+            android:src="@drawable/ic_search"
+            app:tint="@color/white"
+            android:contentDescription="@string/forbutton" />
     </TableRow>
 
 </LinearLayout>

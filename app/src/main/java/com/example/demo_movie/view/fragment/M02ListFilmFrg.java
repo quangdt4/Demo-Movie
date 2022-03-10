@@ -19,12 +19,15 @@ public class M02ListFilmFrg extends BaseFragment<M02ListFilmModel> implements Fi
     private static final String TAG = M02ListFilmFrg.class.getName();
     public static final String KEY_SHOW_DETAIL = "KEY_SHOW_DETAIL";
     public static final String KEY_TO_LOGIN = "KEY_TO_LOGIN";
+    public static final String KEY_TO_SEARCH = "KEY_TO_SEARCH";
     private RecyclerView rvFilm;
 
     @Override
     protected void initViews() {
         ImageView ivLogOut = findViewById(R.id.ic_logout);
+        ImageView ivSearch = findViewById(R.id.ic_search);
         ivLogOut.setOnClickListener(this);
+        ivSearch.setOnClickListener(this);
         rvFilm = findViewById(R.id.rv_film);
         rvFilm.setLayoutManager(new LinearLayoutManager(App.getInstance()));
         mModel.getListFilm();
@@ -42,6 +45,8 @@ public class M02ListFilmFrg extends BaseFragment<M02ListFilmModel> implements Fi
                     .setNegativeButton("CANCEL", (dialog, which) -> dialog.cancel())
                     .setMessage("Do you want log out now?")
                     .show();
+        } else if (v.getId() == R.id.ic_search) {
+            callBack.onCallBack(KEY_TO_SEARCH, null);
         }
     }
 

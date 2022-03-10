@@ -16,13 +16,13 @@ public class FilmResModel implements Serializable {
         return page;
     }
 
-    public void setPage(int page) {
-        this.page = page;
-    }
-
-    public void setListResult(List<Result> listResult) {
-        this.listResult = listResult;
-    }
+//    public void setPage(int page) {
+//        this.page = page;
+//    }
+//
+//    public void setListResult(List<Result> listResult) {
+//        this.listResult = listResult;
+//    }
 
     public List<Result> getListResult() {
         return listResult;

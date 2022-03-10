@@ -11,11 +11,11 @@ import com.example.demo_movie.model.FilmResModel;
 import com.example.demo_movie.view.viewmodel.M004TrailerFilmModel;
 
 
-public class M004Frg extends BaseFragment<M004TrailerFilmModel> {
+public class M04YoutubeFrg extends BaseFragment<M004TrailerFilmModel> {
     private FilmResModel.Result film;
 
 
-    private static final String TAG = M004Frg.class.getName();
+    private static final String TAG = M04YoutubeFrg.class.getName();
 
     public void setFilm(FilmResModel.Result film) {
         this.film = film;

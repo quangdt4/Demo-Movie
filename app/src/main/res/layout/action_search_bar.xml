@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/d_56"
+        android:background="@color/dark_blue"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="56dp"
+            android:layout_height="@dimen/d_56"
+            android:contentDescription="@string/forbutton"
+            android:padding="@dimen/d_16"
+            android:src="@drawable/ic_back"
+            app:tint="@color/white" />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/d_8"
+            android:layout_marginTop="@dimen/d_8"
+            android:layout_marginBottom="@dimen/d_8"
+            android:background="@color/grayLight" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/search"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_16s" />
+
+        <View
+            android:layout_width="56dp"
+            android:layout_height="@dimen/d_56" />
+    </TableRow>
+
+</LinearLayout>
