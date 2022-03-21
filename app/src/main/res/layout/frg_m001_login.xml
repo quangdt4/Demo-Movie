@@ -67,21 +67,44 @@
             android:textColor="@color/white"
             android:textSize="@dimen/d_16s" />
 
-        <TextView
-            android:id="@+id/tv_login"
-            android:layout_width="@dimen/d_200"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="@dimen/d_20"
-            android:background="@drawable/bg_radius_fill"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:padding="@dimen/d_15"
-            android:text="@string/login"
-            android:textColor="@color/black"
-            android:textColorHint="@color/white"
-            android:textSize="@dimen/d_18s"
-            android:textStyle="bold" />
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_20">
+
+            <TextView
+                android:id="@+id/tv_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/d_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_fill_register"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/d_15"
+                android:text="@string/register"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/d_18s"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/d_10"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_fill_login"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:padding="@dimen/d_15"
+                android:text="@string/login"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/d_18s"
+                android:textStyle="bold" />
+
+        </TableRow>
     </LinearLayout>
 </FrameLayout>

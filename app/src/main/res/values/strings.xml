@@ -24,6 +24,7 @@
     <string name="forlogo">forLogo</string>
     <string name="forbackground">forBackground</string>
     <string name="login">Login</string>
+    <string name="register">Register</string>
     <string name="movie_name">Movie name…</string>
     <string name="no_results">No results</string>
     <string name="search">Search</string>

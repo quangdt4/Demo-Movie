@@ -9,6 +9,7 @@ import com.example.demo_movie.view.fragment.M02ListFilmFrg;
 import com.example.demo_movie.view.fragment.M03DetailFilmFrg;
 import com.example.demo_movie.view.fragment.M04YoutubeFrg;
 import com.example.demo_movie.view.fragment.M05SearchFrg;
+import com.example.demo_movie.view.fragment.M06Register;
 import com.example.demo_movie.view.viewmodel.M02ListFilmModel;
 
 public class MainActivity extends BaseAct<M02ListFilmModel> implements OnActionCallBack {
@@ -34,10 +35,16 @@ public class MainActivity extends BaseAct<M02ListFilmModel> implements OnActionC
     public void onCallBack(String key, Object data) {
         switch (key) {
             case M00SplashFrg.KEY_SHOW_LOGIN:
+            case M06Register.KEY_SHOW_LOGIN:
             case M02ListFilmFrg.KEY_TO_LOGIN:
                 M01LoginFrg loginFrg = new M01LoginFrg();
                 loginFrg.setCallBack(this);
                 showFragment(R.id.container_view, loginFrg, false);
+                break;
+            case M01LoginFrg.KEY_SHOW_REGISTER:
+                M06Register register = new M06Register();
+                register.setCallBack(this);
+                showFragment(R.id.container_view, register, false);
                 break;
             case M00SplashFrg.KEY_SHOW_LIST:
             case M01LoginFrg.KEY_SHOW_LIST_FILM:

@@ -12,6 +12,7 @@ import com.example.demo_movie.view.viewmodel.M01LoginModel;
 
 public class M01LoginFrg extends BaseFragment<M01LoginModel> {
     public static final String KEY_SHOW_LIST_FILM = "KEY_SHOW_LIST_FILM";
+    public static final String KEY_SHOW_REGISTER = "KEY_SHOW_REGISTER";
     private EditText edtUsername, edtPass;
     private CheckBox checkBox;
 
@@ -20,6 +21,7 @@ public class M01LoginFrg extends BaseFragment<M01LoginModel> {
         edtUsername = findViewById(R.id.edt_user_name);
         edtPass = findViewById(R.id.edt_pass);
         findViewById(R.id.tv_login).setOnClickListener(this);
+        findViewById(R.id.tv_register).setOnClickListener(this);
         checkBox = findViewById(R.id.cb_remember);
     }
 
@@ -40,6 +42,8 @@ public class M01LoginFrg extends BaseFragment<M01LoginModel> {
         } else if (v.getId() == R.id.tv_login && !checkBox.isChecked()) {
             doLogin(edtUsername.getText().toString(), edtPass.getText().toString(), 0);
             Toast.makeText(App.getInstance(), "Unchecked", Toast.LENGTH_SHORT).show();
+        } else if (v.getId() == R.id.tv_register) {
+            callBack.onCallBack(KEY_SHOW_REGISTER, null);
         }
     }
 
