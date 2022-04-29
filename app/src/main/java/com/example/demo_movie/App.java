@@ -2,6 +2,7 @@ package com.example.demo_movie;
 
 import android.app.Application;
 
+//SOURCE
 public class App extends Application {
     private static App instance;
 
