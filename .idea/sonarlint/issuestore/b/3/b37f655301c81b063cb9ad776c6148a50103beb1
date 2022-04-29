@@ -1,0 +1,10 @@
+
+D
+java:S1444".Make this "public static BASE_URL" field final(”°å‘
+a
+java:S2259-"FA "NullPointerException" could be thrown; "response" is nullable here.(¥å¦ñøÿÿÿÿ
+j
+java:S1104"TMake BASE_URL a static final constant or non-public and provide accessors if needed.(”°å‘
+i
+java:S3008"SRename this field "BASE_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”°å‘
+V	java:S125"<This block of commented-out lines of code should be removed.(Ù™÷Öýÿÿÿÿ

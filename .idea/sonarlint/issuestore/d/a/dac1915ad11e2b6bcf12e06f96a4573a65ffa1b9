@@ -1,0 +1,7 @@
+
+f
+java:S1301g"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ
+<	java:S131Q""Add a default case to this switch.(´ÒÜºúÿÿÿÿ
+<	java:S131g""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+t
+java:S3252}"^Use static access with "com.example.demo_movie.view.viewmodel.BaseViewModel" for "KEY_NOTIFY".(à†…æ
